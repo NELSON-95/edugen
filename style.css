@@ -1,0 +1,331 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html,body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+ 
+    
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --green:#cff532;
+    --dark-green:#254b65;
+    --gray:#c1c7ad;
+    --white:#fcfaf1;
+}
+/* .sectionContainer {}
+.heroSection{}
+.nav{} */
+.navBar{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    /* top: 0px; */
+    background-color: #254b65;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 11;
+}
+.navBar .logo{
+    flex-grow:3; 
+}
+.navBar .hamBurger{
+    flex-grow: 1;
+    position: relative;
+}
+.navBar .hamBurger .hamburger{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 5vh;
+    transform: translateY(-50%);
+    border-radius: 3px;
+    border: 1px solid #cff532;
+    background-color: #fcfaf1;
+    cursor: pointer;
+    
+}
+.navBar .hamBurger .hamburger:hover{
+    box-shadow: 0px 3px 2px 0px rgba(0, 0,0, 0.3) ;
+}
+.navBar .hamBurger .hamburger>div{
+    position: absolute;
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    
+}
+.navBar .hamBurger .item1{
+    top: 10px;
+    left: 2.5px;
+    transform: translateY(-50%);
+}
+.navBar .hamBurger .item2{
+    top: 15px;
+    left: 2.5px;
+    transform: translateY(-50%);
+}
+.navBar .hamBurger .item3{
+    top: 20px;
+    left: 2.5px;
+    transform: translateY(-50%);
+}
+.navMenu{
+    position: fixed;
+    top: 10vh; 
+    left:-100%; 
+    background-color: rgba(0, 0,0, 0.5);
+    width: 60%;
+    height: 90vh;
+    z-index: 10;
+}
+.navMenu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+  
+}
+.navMenu ul li{
+    line-height: 2;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+.navMenu ul li a{
+    color:#fcfaf1;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+}
+.navMenu ul li a:hover{
+    border-bottom: 2px solid #cff532;
+}
+
+
+/* hero section */
+.heroBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    background: url("");
+    /* background-color: red; */
+    position: relative;
+    /* top: 10vh;  */
+    height: 90vh;
+}
+.heroText{
+    width:80%;
+    min-height:100px;
+    background-color: rgb(80, 200, 0);
+}
+.heroBtn{
+    width: 50%;
+    min-height: 100px;
+    background-color: orange;
+}
+
+
+/* about section */
+
+.aboutSection{
+    position: relative;
+    /* top: 10vh; */
+    min-height: 300px;
+    width: 90%;
+    background-color: aqua;
+    margin: 0px auto;
+}
+
+
+/* service section */
+.serviceSection{
+    /* top: 10vh; */
+    min-height: 200px;
+    width: 100%;
+    margin: 0px auto;
+    /* background-color: #254b65; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+}
+.serviceSection p{
+    font-size: 12px ;
+}
+.serviceSection>div{
+    width: 40%;
+    min-height: 150px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0,0, 0.3);
+}
+.serviceSection>div:hover{
+    box-shadow: 0px 20px 30px rgba(0, 0,0, 0.5), 0px 15px 10px rgba(0, 0,0, 0.5);
+    transform: scale(1.02);
+}
+
+@media(min-width:769px) {
+    .serviceSection>div{
+        width: 250px;
+        min-height: 250px;
+    }
+}
+
+
+
+/* project section */
+
+.projectSection{
+    width: 100%;
+    height: auto;
+}
+.projectImgBox{
+    height: 250px;
+    width: min-content(80%, 400px);
+    background-color: bisque;
+}
+.slideDotBox{
+    display: flex;
+    height: auto;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #cff532;
+
+}
+.slideDotBox>div{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: 20px;
+}
+
+
+/* product Section */
+
+.productItems{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productItems>div{
+    width: 250px;
+    margin: 10px;
+    min-height: 250px;
+    border: 1px solid #cff532;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0,0, 0.3);
+}
+
+
+/* contact section */
+.contactSection{
+    width: 100%;
+    min-height: 250px;
+}
+.contactDetail{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Gmap{
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+    /* border:1px solid red ; */
+    box-shadow: 0px 10px 10px 5px;
+    background-color: rgba(0, 0,0, 0.3);
+   
+}
+.form{
+    width: 80%;
+    min-height: 250px;
+    margin: 0px auto;
+    
+}
+form{
+    width: 250px;
+    min-height: 250px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #cff532;
+}
+/* media Query */
+@media(min-width:769px){
+    .contactDetail{
+        flex-direction: row;
+        
+    }
+    .Gmap{
+        width: 40%;
+        height: 300px;
+       
+    }
+    .form{
+        width: 40%;
+        min-height: 250px;
+        
+    }
+}
+
+
+
+/* FOOTER SECTION */
+.footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    left: 0px;
+    min-height: 200px;
+    width: 100%;
+    background-color:#254b65;
+    color: #ffffff;
+}
+
+.pageLinks ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+   
+}
+.pageLinks ul>li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.copyright{
+    position: absolute;
+    text-align: center;
+    width: 100%; 
+    bottom: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 20vh;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: #cff532;
+}
