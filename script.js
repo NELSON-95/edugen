@@ -54,6 +54,7 @@ function slideImg(){
     }
     setTimeout(slideImg,time);
 console.log(i)
+console.log(i)
 
     
 }
