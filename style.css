@@ -60,7 +60,7 @@ a:visited{
     height: 10vh;
     background-color: rgba(0, 0,0, 0.8);
     z-index:100; 
-    box-shadow: 5px 0px 8px rgba(0, 0,0, 0.3);
+    box-shadow: 5px 0px 8px rgba(0, 0,0, 0.4);
     
 } 
 .nav.changeColor{
