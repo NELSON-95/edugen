@@ -185,14 +185,14 @@ a:visited{
     font-size: 12px;
     transition: 0.3s ease;
 }
-/* .navMenu ul li a:link{
-    color: white;
+.navMenu ul li a:link{
+    color: black;
 }
 .navMenu ul li:hover a{
     color: white;
 }
 .navMenu ul li a:active{
-    color: white;
+    color: orange;
 } */
 .navMenu ul li:hover{
     background-color: var(--dark-green);
