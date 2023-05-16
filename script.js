@@ -31,38 +31,72 @@ function changeNavColor(){
     }
 
 
-let imgBox= document.querySelector(".imgBox1");
+let imgBox1= document.querySelector(".imgBox1");
+let imgBox2= document.querySelector(".imgBox2");
+let imgBox3= document.querySelector(".imgBox3");
 let i= 0;
 let imgBoxArray=[
-    'img/hero6.jpg',
+    'img/hero7.jpg',
+    'img/hero2.jpg',
     'img/hero3.jpg', 
+    'img/hero4.jpg',
     'img/hero5.jpg', 
-    'img/hero7.jpg', 
-    'img/hero1.jpg',  
+    'img/hero6.jpg', 
+    // 'img/hero7.jpg',  
 ];
-let time =10000;
+let imgBox1Arr= imgBoxArray.slice(0,2);
+let imgBox2Arr= imgBoxArray.slice(2,4);
+let imgBox3Arr= imgBoxArray.slice(4,6);
+let time =0;
 
-window.addEventListener('DOMContentLoaded', slideImg);
-function slideImg(){
-    imgBox.src=imgBoxArray[i];
-    if(i<imgBoxArray.length-1){
+let nextBtn= document.querySelector(".nextBtn");
+let prevBtn= document.querySelector(".prevBtn");
+
+nextBtn.addEventListener('click',slideImgNext);
+prevBtn.addEventListener('click',slideImgPrev);
+
+
+ window.addEventListener('DOMContentLoaded', ()=>{
+     setTimeout(slideImgNext,time)
+ });
+
+function slideImgNext(){
+    
+    if(i<imgBox1Arr.length-1){
+        imgBox1.src=imgBox1Arr[i];
+        imgBox2.src=imgBox2Arr[i];
+        imgBox3.src=imgBox3Arr[i];
+        i++
+        prevBtn.style.opacity="1"; 
         
-        i++;
     }
     else{
-        i=0;
+        nextBtn.style.opacity="0.5"
+        prevBtn.style.opacity="1"
+       
     }
-    setTimeout(slideImg,time);
-console.log(i)
-console.log(i)
+    
+}
+function slideImgPrev(){
+    
+    if(i>0){
+        imgBox1.src=imgBox1Arr[i];
+        imgBox2.src=imgBox2Arr[i];
+        imgBox3.src=imgBox3Arr[i];
+        nextBtn.style.opacity="1";
+        i--;
+       
+    }
+    else{
+       prevBtn.style.opacity="0.3";
+       nextBtn.style.opacity="1";
+    }
 
     
 }
+let width= window.innerWidth;
+console.log(width)
 
 
-let nextBtn= document.querySelector(".nextBtn");
-let prevBtn= document.querySelector(".prvBtn");
 
-    nextBtn.addEventListener('click',()=>{
-        i++
-    })
+    

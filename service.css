@@ -1,0 +1,45 @@
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
+html, body{
+     font-family:verdana, sans-serif ;
+     font-size: 16px;
+}
+.serviceHero{
+     width: 100%;
+     min-height: 90vh;
+     position: relative;
+     background-color: aquamarine;
+}
+.serviceHeader{
+     text-align: center;
+     padding: 15px;
+     font-size: calc(14px + 0.5vw);
+     font-weight: bold;
+     font-family: verdana, sans-serif;
+}
+.serviceContainer{
+     display: flex;
+     flex-wrap: wrap;
+
+}
+.serviceContainer>div{
+     width: max(300px, 40%);
+     margin: 20px auto;
+     border-radius: 10px 10px 0 5px; 
+     background-color: #fcfaf1;
+     padding: 30px;
+     
+}
+.serviceContainer>div h5{
+     font-family: georgia, serif;
+     font-size: calc(14px + 0.5vw);
+     font-weight: bold;
+     padding: 10px;
+}
+.serviceContainer>div ul li{
+     list-style-type:circle ;
+    
+}
