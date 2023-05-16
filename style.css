@@ -434,7 +434,6 @@ a:visited{
     width: min(90%, 300px);
     margin: 10px;
     min-height: 250px;
-    /* border: 1px solid var(--green); */
     border-radius: 20px;
     background-color: var(--white);
     box-shadow: 0px 5px 8px 0px rgba(0, 0,0, 0.3);
