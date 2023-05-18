@@ -279,6 +279,7 @@ html,body {
     text-align: center;
     margin-top: 50px;
     padding-top: 20px;
+    padding: 10px;
 }
 .aboutText p{
     max-width: 1200px;
@@ -579,6 +580,7 @@ form a:hover{
 .socialIcons{
     text-align: center;
     padding: 20px;
+    background-color: var(--white);
     
 }
 .socialIcons a{
@@ -588,12 +590,13 @@ form a:hover{
 .socialIcons a .fa{
     background-color: var(--white);
     padding: 3px;
-    border-radius: 10px;
+    border-radius: 100%;
+    padding: 3px;
 }
 
 .pageLinks ul{
     margin: 0px;
-    padding: 0px;
+    padding: 20px;
     list-style-type: none;
    
 }
@@ -601,8 +604,11 @@ form a:hover{
     text-decoration: none;
     color: #ffffff;
     font-size: calc(13px + 0.4vw);
-    line-height: 1.5;
+    line-height: 1.8;
     padding: 0 20px;
+}
+.pageLinks ul>li a i{
+    margin-right: 5px;
 }
 .copyright{
     position: absolute;
@@ -617,12 +623,16 @@ form a:hover{
     position: fixed;
     bottom: 5vh;
     right: 5px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 100%;
     background-color: var(--green);
     display: grid;
     place-items: center;
+   
+}
+.whatsapp .fa{
+    color: white;
 }
 
 
@@ -711,6 +721,21 @@ form a:hover{
         width: 40%;
         height: 300px;
         
+    }
+    .pageLinks{
+        height: 200px;
+    }
+    .pageLinks ul{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 600px;
+        margin: 0 auto;
+        place-items: center;
+      
+    }
+    .pageLinks ul li i{
+        display: block;
     }
 }
 
