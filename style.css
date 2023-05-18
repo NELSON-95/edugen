@@ -30,7 +30,7 @@ html,body {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 10vh;
+    height: 50px;
     background-color: rgba(0, 0,0, 0.8);
     z-index:100; 
     box-shadow: 5px 0px 8px rgba(0, 0,0, 0.4);
@@ -42,43 +42,39 @@ html,body {
 
 .navBar{
     width: 100%;
-    height: 10vh;
-    background-color: transparent;
+    height: 50px;
     position: relative;
     top: 0px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; 
+    align-items: center;
     
     
 } 
-.navBar .logo{
+.logo{
     position: relative;
-    flex-grow:3;    
+    flex-grow:3; 
+    height: 50px;
+    display: grid;
+    place-items: center;
 }
-.navDesign{
-    position: absolute;
-    top: -5vh;
-    right:-50px;
-    width: 100px;
-    height: 10vh;
-    background-color: var(--green);
-    border-radius:50px ;
-    
+.logo img{
+    height: 40px;
+    width: 50px;
 }
+
 .navBar .hamBurger{
     flex-grow: 1;
     position: relative;
+    height: 50px;
+    display: grid;
+    place-items: center;
 }
-
-
 
 .navBar .hamBurger .hamburger{
     position: relative;
     height: 30px;
     width: 30px;
-    margin-left: 20px;
-    margin-top: 5vh;
-    transform: translateY(-50%);
     border-radius: 3px;
     border: 1px solid var(--green);
     background-color: var(--white);
@@ -124,11 +120,21 @@ html,body {
     transform: rotate(-45deg);
     
 }
+.navDesign{
+    position: absolute;
+    top: -25px;
+    right:-50px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--green);
+    border-radius:50px ;
+    
+}
 
 .navMenu{
     position: fixed;
     left: 0px; 
-    top:10vh; 
+    top:50px; 
     background-color: var(--white);
     width: 0px;
     height: auto;
@@ -182,30 +188,31 @@ html,body {
     align-items: center; 
     justify-content: center;
     width: 100%;
-    background-image: url("/img/hero1.jpg");
+    background-image: url("img/hero1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     height: 90vh;
-    animation: heroBanner 21s infinite ease 3s;
+    top:50px;
+    animation: heroBanner 21s infinite ease 3s; 
     z-index: -2;
 }
 @keyframes heroBanner{
     0%{
-        background-image: url("../img/hero1.jpg");
+        background-image: url("img/hero1.jpg");
     }
     25%{
-        background-image: url("../img/hero4.jpg");
+        background-image: url("img/hero4.jpg");
     }
     50%{
-        background-image: url("../img/hero2.jpg");
+        background-image: url("img/hero2.jpg");
     }
     75%{
-        background-image: url("../img/hero6.jpg");
+        background-image: url("img/hero6.jpg");
     }
     100%{
-        background-image: url("../img/hero7.jpg");
+        background-image: url("img/hero7.jpg");
     }
 }
 .heroBanner::before{
@@ -266,7 +273,7 @@ html,body {
     padding: 10px;
 }
 .aboutText p{
-    max-width: 1000px;
+    max-width: 1200px;
     font-size: calc(15px + 0.4vw);
     text-align:start;
     padding: 10px;
@@ -276,7 +283,7 @@ html,body {
 }
 .aboutText a{
     display: block; 
-    background-color:var(--darkgreen);
+    background-color:var(--green);
     max-width:250px;
     margin: 20px auto;
     padding: 10px;
@@ -292,6 +299,7 @@ html,body {
 .aboutText a:hover{
     text-decoration: none;
     color:var(--white) ;
+    background-color: var(--darkgreen);
 }
 
 
@@ -388,7 +396,7 @@ html,body {
 .projectBtn{
     display: flex;
     width: 300px;
-    min-height: 20px;
+    height: 40px;
     margin: 0 auto;
     cursor: pointer;
     color: white;
@@ -398,14 +406,16 @@ html,body {
 .nextBtn{
     flex-grow: 1;
     text-align: center;
-    padding: 20px 0;
-    background-color: green;
+    padding: 10px 0;
+    background-color: var(--darkgreen);
+    font-weight: bold;
 }
 .prevBtn{
     flex-grow: 1;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     background-color: red;
+    font-weight: bold;
 
 }
 .slideDotBox{
@@ -425,7 +435,7 @@ html,body {
     width: 8px;
     border-radius: 100%;
     margin-right: 20px;
-    border: 1px solid var(--dark-green);
+    border: 1px solid var(--greenblue);
 }
 
 
@@ -506,7 +516,7 @@ form input{
     outline: none;
     border: 1px solid var(--dark-green);
     border-radius: 3px;
-    width: 190px;
+    width: min(90%,400px);
     
 }
 form textarea{
@@ -516,16 +526,17 @@ form textarea{
     border: 1px solid var(--dark-green);
     border-radius: 5px;
     outline: none;
+    width:min(90%,400px );
     
 }
 form input:focus, form textarea:focus{
-    background-color: var(--dark-green);
+    background-color: var(--greenblue);
     color: var(--white);
     border: 1px solid var(--gray);
 }
 form a{
-    color: black;
-    font-weight: 100;
+    color: var(--white);
+    font-weight: bold;
     display:block;
     text-align: center;
     width: 100px;
@@ -534,23 +545,12 @@ form a{
     margin: 0px auto;
     background-color:  var(--green);
 }
-/* media Query */
-@media(min-width:769px){
-    .contactDetail{
-        flex-direction: row;
-        
-    }
-    .Gmap{
-        width: 40%;
-        height: 300px;
-       
-    }
-    .form{
-        width: 40%;
-        min-height: 250px;
-        
-    }
+form a:hover{
+    text-decoration: none;
+    background-color: var(--darkgreen);
+    color: #ffffff;
 }
+
 
 
 
@@ -561,10 +561,25 @@ form a{
     flex-direction: column;
     bottom: 0px;
     left: 0px;
-    min-height: 200px;
+    min-height: 250px;
     width: 100%;
     background-color:#254b65;
     color: #ffffff;
+    padding-bottom: 20px;
+}
+.socialIcons{
+    text-align: center;
+    padding: 20px;
+    
+}
+.socialIcons a{
+    margin: 0 5px 0 0;
+    text-decoration: none;
+}
+.socialIcons a .fa{
+    background-color: var(--white);
+    padding: 3px;
+    border-radius: 10px;
 }
 
 .pageLinks ul{
@@ -576,14 +591,15 @@ form a{
 .pageLinks ul>li a{
     text-decoration: none;
     color: #ffffff;
-    font-size: 13px;
+    font-size: calc(13px + 0.4vw);
     line-height: 1.5;
+    padding: 0 20px;
 }
 .copyright{
     position: absolute;
     text-align: center;
     width: 100%; 
-    bottom: 10px;
+    bottom: 0px;
     font-size: 12px;
     font-weight: lighter;
 }
@@ -595,12 +611,15 @@ form a{
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    background-color: #cff532;
+    background-color: var(--green);
+    display: grid;
+    place-items: center;
+    /* text-align: center; */
 }
 
 
 
-
+/* media Query */
 
 @media screen and (min-width:769px){
     .nav{
@@ -624,7 +643,7 @@ form a{
         left:30%; 
         min-width: 70%;
         padding: 0 20px;
-        height:10vh;
+        height:50px;
         transition: none;
       
     }  
@@ -644,7 +663,7 @@ form a{
         border-bottom: none;
         border-radius: 10px;
         cursor: pointer;
-        background-color: var(--green);
+        background-color: var(--lightgreen);
     }
     .navMenu ul li a{
         padding: 0px;
@@ -654,6 +673,24 @@ form a{
         text-decoration: none;
         color: var(--white);
     }  
+}
+
+
+@media(min-width:769px){
+    .contactDetail{
+        flex-direction: row;
+        
+    }
+    .Gmap{
+        width: 40%;
+        height: 300px;
+       
+    }
+    .form{
+        width: 40%;
+        min-height: 250px;
+        
+    }
 }
 
 
