@@ -55,15 +55,22 @@ html,body {
     position: relative;
     flex-grow:3; 
     height: 50px;
-    display: grid;
+    display: flex;
     place-items: center;
 }
 .logo img{
     height: 40px;
     width: 50px;
 }
-
-.navBar .hamBurger{
+.logoText{
+    display: block;
+    font-weight:bold;
+    font-size: calc(6px + 0.4vw);
+    padding: 5px;
+    font-family:verdana;
+    color: var(--darkgreen);
+}
+.hamBurger{
     flex-grow: 1;
     position: relative;
     height: 50px;
@@ -270,7 +277,8 @@ html,body {
     font-size: calc(16px + 0.4vw);
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 .aboutText p{
     max-width: 1200px;
@@ -305,17 +313,15 @@ html,body {
 
 /* service section */
 .serviceSection{
-    /* top: 10vh; */
     height: auto;
     width: 100%;
-    padding-top: 40px;
 }
 .serviceHeader h5{
     font-size: calc(16px + 0.4vw);
     font-weight: bold;
     font-family: verdana, sans-serif;
     text-align: center;
-    padding: 10px;
+    
 }
 .services{
     width: 100%;
@@ -323,6 +329,7 @@ html,body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 0px;
     padding: 20px 0px;
     height: auto;
     font-size: 16px;
@@ -484,27 +491,29 @@ html,body {
 .contactDetail{
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
     
 }
 .Gmap{
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    height: 300px;
     margin: 20px auto;
-    box-shadow: 0px 10px 10px 5px;
+    box-shadow: 0px 3px 6px ;
     background-color: rgba(0, 0,0, 0.3);
+    overflow: hidden;
    
 }
 .form{
-    width: 80%;
-    min-height: 250px;
-    margin: 0px auto;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
     
 }
 form{
-    padding: 20px 0px;
-    max-width: 250px;
-    min-height: 250px;
-    margin: 20px auto;
+    padding-top: 20px;
+    width: min(100%, 400px);
+    height: 300px;
+    margin: 0 auto;
     border-radius: 10px;
     border: 1px solid var(--green);
     background-color: var(--white);
@@ -512,11 +521,11 @@ form{
 form input{
     display: block;
     margin: 5px auto;
-    padding: 3px;
+    padding: 5px;
     outline: none;
     border: 1px solid var(--dark-green);
-    border-radius: 3px;
-    width: min(90%,400px);
+    border-radius: 5px;
+    width: min(80%, 350px);
     
 }
 form textarea{
@@ -526,7 +535,7 @@ form textarea{
     border: 1px solid var(--dark-green);
     border-radius: 5px;
     outline: none;
-    width:min(90%,400px );
+    width:min(80%,350px );
     
 }
 form input:focus, form textarea:focus{
@@ -539,11 +548,11 @@ form a{
     font-weight: bold;
     display:block;
     text-align: center;
-    width: 100px;
-    padding: 5px 5px;
+    width: 150px;
+    padding: 5px 10px;
     border-radius: 5px;
     margin: 0px auto;
-    background-color:  var(--green);
+    background-color:  var(--lightgreen);
 }
 form a:hover{
     text-decoration: none;
@@ -614,7 +623,6 @@ form a:hover{
     background-color: var(--green);
     display: grid;
     place-items: center;
-    /* text-align: center; */
 }
 
 
@@ -627,10 +635,22 @@ form a:hover{
     }
     .hamBurger{
         display: none;
+        width: 0px;
+       
     }
-    .navBar .logo{
+    .hamburger{
+        display: none;
+    }
+    .logo{
         position: relative;
-        left: 0px;   
+        left: 0px; 
+        padding: 0 10px;  
+    }
+    .logo img{
+        width: 100px;
+    }
+    .logoText{
+        font-size: calc(8px + 0.4vw);
     }
     .navBar{
         width: 30%;
@@ -664,6 +684,7 @@ form a:hover{
         border-radius: 10px;
         cursor: pointer;
         background-color: var(--lightgreen);
+        opacity: 0.6;       
     }
     .navMenu ul li a{
         padding: 0px;
@@ -688,7 +709,7 @@ form a:hover{
     }
     .form{
         width: 40%;
-        min-height: 250px;
+        height: 300px;
         
     }
 }
