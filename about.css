@@ -98,6 +98,7 @@ body{
 .box{
     height: 200px;
     width: min(90%,400px);
+    border: 1px solid var(--gray);
     /* background-color: var(--gray); */
     border-radius: 10px;
     margin: 10px;
@@ -136,11 +137,14 @@ body{
 .box .text h5{
     font-family: verdana, serif;
     font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: var(--green);
 
 }
 .box .text p{
     font-family: georgia, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     
 }
 .img .text{
