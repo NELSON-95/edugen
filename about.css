@@ -6,19 +6,87 @@
 }
 body{
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
 }
-:root {
+/* :root {
     --green:rgb(0,255,255);
     --dark-green:#254b65;
     --gray:#c1c7ad;
     --white:#fcfaf1;
-}
+} */
 .aboutHero{
     width: 100%;
     height: 90vh;
-    background-color: var(--dark-green) ;
+    display: flex;
+    position: relative;
+    place-items: center;
+    background-image: url(img/edugenBattery.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
     /* display: none; */
+}
+.aboutHero::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0,0, 0.8);
+    z-index: -1;
+}
+.heroContent{
+    margin: 0 auto;
+    background-color: var(--green) ;
+    min-height: 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 50px;
+    box-shadow:  0 3px 6px #ffffff;
+    padding: 20px;
+    
+}
+.heroContent img{
+    height: 100px;
+    width: 100px;
+    padding: 20px 0;
+}
+.heroContent h5{
+    margin: 0 auto;
+    font-size: calc(18px + 0.4vw);
+    font-family: fantasy;
+    color: var(--white);
+}
+.aboutMission{
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+}
+.aboutMission>div{
+    width: min(90% , 500px);
+    min-height:300px ;
+    margin: 10px auto;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0,0, 0.3);
+
+    
+}
+.aboutMission>div h5{
+    font-family: verdana, serif;
+    font-weight: bold;
+}
+.aboutMission>div p{
+    padding: 10px 0;
+    font-family: georgia, sans-serif;
+    font-size: calc(15px + 0.1vw);
 }
 .aboutBox{
     display: flex;
@@ -34,7 +102,7 @@ body{
     border-radius: 10px;
     margin: 10px;
     transform: translateX(500%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in-out;
     display: flex;
 }
 .box.show{
@@ -50,11 +118,12 @@ body{
 
 .box .img{
     flex-grow:1;
-    background-color: red;
+    background-color: var(--green);
 }
+
 .box .text{
     flex-grow:2;
-    background-color: blue;
+    background-color:var(--white);
 }
 
 
