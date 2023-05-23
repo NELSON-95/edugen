@@ -335,6 +335,9 @@ html,body {
     height: auto;
     font-size: 16px;
 }
+.serviceHeader h5{   
+    padding: 5px;
+}
 .services p{
     text-align: center;
     padding: 10px;
@@ -351,7 +354,14 @@ html,body {
     box-shadow: 0px 5px 5px 0px rgba(0, 0,0, 0.3);
     transition: transform 0.5s ease-in-out;
     color: black;
+    text-decoration: none;
     
+    
+}
+.services>a p{
+    text-transform: uppercase;
+    font-size: calc(8px + 0.4vw);
+    padding: 20px;
     
 }
 .services>a:hover{
@@ -483,11 +493,11 @@ html,body {
     padding: 10px;
 }
 .contactHeader h4{
-    font-size: calc(18px + 0.4vw);
+    font-size: calc(15px + 0.4vw);
     font-weight: bold;
-    font-family: georgia, serif;
+    font-family: georgia, sans-serif;
     text-align: center;
-    padding: 0 20px;
+    padding:  20px;
 }
 .contactDetail{
     display: flex;
@@ -623,12 +633,14 @@ form a:hover{
     position: fixed;
     bottom: 5vh;
     right: 5px;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background-color: var(--green);
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
    
 }
 .whatsapp .fa{
