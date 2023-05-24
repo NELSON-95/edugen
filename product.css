@@ -1,0 +1,76 @@
+
+.productHero{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/edugenLogo.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+.productHero::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0,0, 0.8);
+  z-index: -1;
+}
+.productSection h5{
+  font-size:calc(12px + 0.4vw) ;
+  font-family: 'Arial Black', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+  color: var(--darkgreen);
+}
+.productSection h4{
+  font-family: Helvetica;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.productItems{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productItems>div{
+  width: min(90%, 300px);
+  margin: 10px;
+  min-height: 300px;
+  border-radius: 5px;
+  background-color: var(--white);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0,0, 0.3);
+}
+.productItems h6{
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+.productItems img{
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+
+}
+.productItems p{
+  padding: 10px;
+  text-align: end;
+  background-color: var(--green);
+  color: white;
+  font-size: 12px;
+}

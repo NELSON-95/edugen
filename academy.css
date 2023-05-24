@@ -46,19 +46,20 @@
   font-family: verdana, sans-serif;
   text-align: center;
   padding: 20px 0;
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--darkgreen);
 }
 .academyBlocks h5{
   font-size: calc(12px + 0.4vw);
   font-family: verdana, sans-serif;
-  text-align: center;
+  text-align: start;
   padding: 10px 0;
   color: var(--darkgreen);
 }
 .academyBlocks p{
-  font-size: calc(15px + 0.1vw);
+  font-size: calc(15px + 0.2vw);
   font-family: georgia, serif;
   padding:0 10px ;
-  line-height: 1.3;
+  line-height: 1.5;
+  text-align: start;
 }

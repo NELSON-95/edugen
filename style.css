@@ -292,7 +292,7 @@ html,body {
 }
 .aboutText a{
     display: block; 
-    background-color:var(--green);
+    background-color:var(--lightgreen);
     max-width:250px;
     margin: 20px auto;
     padding: 10px;
@@ -350,7 +350,7 @@ html,body {
     min-height: 150px;
     background-color: var(--white);
     margin: 5px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0,0, 0.3);
     transition: transform 0.5s ease-in-out;
     color: black;
@@ -361,14 +361,25 @@ html,body {
 .services>a p{
     text-transform: uppercase;
     font-size: calc(8px + 0.4vw);
-    padding: 20px;
-    
+    padding: 10px;
+    margin-top: 15px;
+    background-color: var(--lightgreen);
+    text-align: start;
+    color: white;
+    font-family: Helvetica;
 }
 .services>a:hover{
     box-shadow: 0px 15px 20px rgba(0, 0,0, 0.2), 0px 10px 5px rgba(0, 0,0, 0.3);
     transform: scale(1.02);
     color: black;
     text-decoration: none;
+}
+.services img{
+    display: block;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+   
 }
 
 @media(min-width:769px) {
@@ -457,29 +468,6 @@ html,body {
 }
 
 
-/* product Section */
-
-.productItems{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.productItems>div{
-    width: min(90%, 300px);
-    margin: 10px;
-    min-height: 250px;
-    border-radius: 20px;
-    background-color: var(--white);
-    box-shadow: 0px 5px 8px 0px rgba(0, 0,0, 0.3);
-}
-.productItems h6{
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
-}
-
-
 /* contact section */
 .contactSection{
     width: 100%;
@@ -506,7 +494,7 @@ html,body {
     
 }
 .Gmap{
-    width: 90%;
+    width: min(100%,400px);
     height: 300px;
     margin: 20px auto;
     box-shadow: 0px 3px 6px ;
@@ -516,14 +504,14 @@ html,body {
 }
 .form{
     width: 90%;
-    height: 300px;
+    min-height: 300px;
     margin: 20px auto;
     
 }
 form{
-    padding-top: 20px;
+    padding: 20px 0;
     width: min(100%, 400px);
-    height: 300px;
+    height: 100%;
     margin: 0 auto;
     border-radius: 10px;
     border: 1px solid var(--green);
@@ -532,7 +520,7 @@ form{
 form input{
     display: block;
     margin: 5px auto;
-    padding: 5px;
+    padding: 10px;
     outline: none;
     border: 1px solid var(--dark-green);
     border-radius: 5px;
@@ -541,7 +529,7 @@ form input{
 }
 form textarea{
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 5px;
     border: 1px solid var(--dark-green);
     border-radius: 5px;
@@ -555,12 +543,13 @@ form input:focus, form textarea:focus{
     border: 1px solid var(--gray);
 }
 form a{
+    text-decoration: none;
     color: var(--white);
     font-weight: bold;
     display:block;
     text-align: center;
     width: 150px;
-    padding: 5px 10px;
+    padding:  10px;
     border-radius: 5px;
     margin: 0px auto;
     background-color:  var(--lightgreen);
@@ -700,21 +689,19 @@ form a:hover{
     .navMenu ul li{
         margin: 0px 2px;
         list-style-type: none;
-        line-height: 2;
         padding: 0px 10px;
-        border-bottom: none;
+        border: 1px solid var(--lightgreen);
         border-radius: 10px;
         cursor: pointer;
-        background-color: var(--lightgreen);
         opacity: 0.6;       
     }
     .navMenu ul li a{
         padding: 0px;
         text-align: start;
-        font-size: 12px;
+        font-size: calc(11px + 0.1vw );
         font-family: verdana, sans-serif;
         text-decoration: none;
-        color: var(--white);
+        color: var(--darkgreen);
     }  
 }
 
@@ -726,13 +713,9 @@ form a:hover{
     }
     .Gmap{
         width: 40%;
-        height: 300px;
-       
     }
     .form{
-        width: 40%;
-        height: 300px;
-        
+        width: 40%; 
     }
     .socialIcons>a i{
         margin-right: 40px;
