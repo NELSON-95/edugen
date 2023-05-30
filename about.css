@@ -25,6 +25,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
+    border-radius: 0 0 60px 0;
     /* display: none; */
 }
 .aboutHero::before{
@@ -80,14 +81,16 @@ body{
     
 }
 .aboutMission>div h5{
-    font-family: verdana, serif;
+    font-family: arial, sans-serif;
     font-weight: bold;
+    font-size: 14px;
+    color: var(--darkgreen);
 }
 .aboutMission>div p{
     padding: 10px 0;
-    font-family: Helvetica, Arial;
-    font-size: calc(15px + 0.4vw);
-    line-height: 1.4;
+    font-family: verdana, sans-serif;
+    font-size: calc(14px + 0.2vw);
+    line-height: 1.5;
 }
 .aboutBox{
     display: flex;
@@ -137,7 +140,7 @@ body{
     padding: 10px;
 }
 .box .text h5{
-    font-family: verdana, serif;
+    font-family: georgia, serif;
     font-size: 12px;
     text-transform: uppercase;
     padding: 10px 0;
@@ -145,9 +148,9 @@ body{
 
 }
 .box .text p{
-    font-family: georgias, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 13px;  
-    line-height: 1.3;  
+    line-height: 1.5;  
 }
 
 
