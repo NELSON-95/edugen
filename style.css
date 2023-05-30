@@ -290,9 +290,10 @@ html,body {
     font-size: calc(15px + 0.4vw);
     font-family: Arial, sans-serif;
     text-align:start;
-    padding: 0 15px;
+    padding: 10px 10px 10px 20px ;
     line-height: 1.5;
     margin: 0px auto;
+   
     
 }
 .aboutText p span{
@@ -647,6 +648,7 @@ form a:hover{
 }
 .pageLinks ul>li a i{
     margin-right: 5px;
+    color:var(--green)
 }
 .copyright{
     position: absolute;
