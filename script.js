@@ -114,7 +114,14 @@ function slideImgPrev(){
 
 let phoneNumber= document.getElementById('phoneNumber');
 phoneNumber.addEventListener('click',()=>{
-    window.alert("Call us on: +2348033754397 OR +2347036455204 ")
+    window.alert("Call us on: \n +2348033754397 \n +2347036455204 ")
+
+})
+
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    let preLoader= document.querySelector('.loaderHero');
+    preLoader.style.display='none';
 })
 
 

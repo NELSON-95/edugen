@@ -65,9 +65,9 @@ html,body {
 .logoText{
     display: block;
     font-weight:bold;
-    font-size: calc(6px + 0.4vw);
+    font-size: calc(8px + 0.4vw);
     padding: 5px;
-    font-family:verdana;
+    font-family:Helvetica, sans-serif;
     color: var(--darkgreen);
 }
 .hamBurger{
@@ -170,7 +170,7 @@ html,body {
     font-weight: bold;
     width: 100%;
     font-size:12px;
-    font-family: verdana, sans-serif;
+    font-family: "Gill sans", sans-serif;
     transition: 0.3s ease;
     text-decoration: none;
 }
@@ -201,6 +201,7 @@ html,body {
     background-position: center;
     position: relative;
     height: 90vh;
+    border-radius: 0 0 100px 0;
     top:50px;
     animation: heroBanner 21s infinite ease 3s; 
     z-index: -2;
@@ -239,18 +240,20 @@ html,body {
     padding: 0 10px;
 }
 .heroText h3{
-    text-align: center;
-    padding: 10px 0px;
-    font-size: calc(2.5em + 0.4vw);
+    text-align:center;
+    padding: 10px 0;
+    font-size: calc(1.8em + 0.4vw);
     font-weight: bold;
     color: white;
-    font-family: verdana, serif;
+    font-family: Tahoma,sans-serif;
+    width: 100%;
+    
 }
 .heroText p{
     text-align: center;
     padding: 10px 0px;
-    font-size: calc(1.5em + 0.4vw);
-    font-family: georgia, sans-serif;
+    font-size: calc(1.2em + 0.4vw);
+    font-family: georgia, serif;
     color: white;
     font-weight: bold;
 }
@@ -262,33 +265,39 @@ html,body {
     position: relative;
     min-height: 300px;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
     margin: 0px auto;
 }
 .aboutHeader h4{
     font-family: georgia,serif;
-    font-size: calc(18px + 0.4vw);
+    font-size: calc(15px + 0.4vw);
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
 .aboutHeader h5{
-    font-family: verdana, sans-serif;
-    font-size: calc(16px + 0.4vw);
+    font-family: arial, sans-serif;
+    font-size: calc(15px + 0.4vw);
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
     padding-top: 20px;
     padding: 10px;
+    color: var(--darkgreen);
 }
 .aboutText p{
     max-width: 1200px;
     font-size: calc(15px + 0.4vw);
+    font-family: Arial, sans-serif;
     text-align:start;
-    padding: 10px;
-    line-height: 1.8;
+    padding: 0 15px;
+    line-height: 1.5;
     margin: 0px auto;
     
+}
+.aboutText p span{
+    font-weight: bold;
+    font-family: georgia, serif;
 }
 .aboutText a{
     display: block; 
@@ -299,10 +308,11 @@ html,body {
     text-align: center;
     color: white;
     outline: none;
+    border: 2px solid var(--gray);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    font-family: verdana;
+    font-family: helvetica, sans-serif;
      
 } 
 .aboutText a:hover{
@@ -318,10 +328,11 @@ html,body {
     width: 100%;
 }
 .serviceHeader h5{
-    font-size: calc(16px + 0.4vw);
+    font-size: calc(15px + 0.4vw);
     font-weight: bold;
-    font-family: verdana, sans-serif;
+    font-family: arial, sans-serif;
     text-align: center;
+    color: var(--darkgreen);
     
 }
 .services{
@@ -335,21 +346,15 @@ html,body {
     height: auto;
     font-size: 16px;
 }
-.serviceHeader h5{   
-    padding: 5px;
-}
-.services p{
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8em ;
-    font-weight: bold;
-}
+
 .services>a{
+    position: relative;
     display: block;
     width: 40%;
     min-height: 150px;
     background-color: var(--white);
     margin: 5px;
+    border-bottom: 2px solid var(--green);
     border-radius: 8px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0,0, 0.3);
     transition: transform 0.5s ease-in-out;
@@ -360,26 +365,31 @@ html,body {
 }
 .services>a p{
     text-transform: uppercase;
-    font-size: calc(8px + 0.4vw);
+    font-size: calc(8px + 0.2vw);
     padding: 10px;
-    margin-top: 15px;
-    background-color: var(--lightgreen);
     text-align: start;
-    color: white;
+    color: var(--greenblue); 
     font-family: Helvetica;
+    font-weight: bold;
+}
+.services>a i{
+    color:var(--lightgreen);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+}
+#sun{
+    position: absolute;
+    left: 40%;
+    top:40% !important;
 }
 .services>a:hover{
     box-shadow: 0px 15px 20px rgba(0, 0,0, 0.2), 0px 10px 5px rgba(0, 0,0, 0.3);
     transform: scale(1.02);
     color: black;
     text-decoration: none;
-}
-.services img{
-    display: block;
-    width: 80%;
-    height: 150px;
-    margin: 0 auto;
-   
 }
 
 @media(min-width:769px) {
@@ -398,22 +408,24 @@ html,body {
     height: auto;
 }
 .projectSection h5{
-    font-size: calc(16px + 0.4vw);
+    font-size: calc(15px + 0.4vw);
     font-weight: bold;
-    font-family: verdana, sans-serif;
+    font-family: arial, sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
+    color: var(--darkgreen);
 }
 .projectImgBox{
     display: flex;
     height: 250px;
     width: 100%;
-    background-color: var(--gray);
+    background-color: var(--white);
     flex-wrap: wrap;
 }
 .projectImgBox>img{
     height: 100%;
     width: max(290px, 30%);
+    border-radius: 15px;
     background-color: var(--white);
     margin: 0 auto;
 
@@ -425,27 +437,36 @@ html,body {
 .projectBtn{
     display: flex;
     width: 300px;
-    height: 40px;
-    margin: 0 auto;
-    cursor: pointer;
-    color: white;
-    
+    height: 30px;
+    margin: 10px auto;
+    cursor: pointer; 
+    position: relative; 
    
 }
 .nextBtn{
-    flex-grow: 1;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--darkgreen);
     font-weight: bold;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    /* overflow: hidden; */
 }
 .prevBtn{
-    flex-grow: 1;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
     background-color: red;
+    color: white;
     font-weight: bold;
-
+    /* overflow: hidden; */
 }
 .slideDotBox{
     display: flex;
@@ -476,14 +497,15 @@ html,body {
 .contactHeader h5{
     font-size: calc(16px + 0.4vw);
     font-weight: bold;
-    font-family: verdana, sans-serif;
+    font-family: arial, sans-serif;
+    color: var(--darkgreen);
     text-align: center;
     padding: 10px;
 }
 .contactHeader h4{
     font-size: calc(15px + 0.4vw);
     font-weight: bold;
-    font-family: georgia, sans-serif;
+    font-family: georgia, serif;
     text-align: center;
     padding:  20px;
 }
@@ -494,17 +516,26 @@ html,body {
     
 }
 .Gmap{
+    position: relative;
     width: min(100%,400px);
-    height: 300px;
+    height: 350px;
     margin: 20px auto;
-    box-shadow: 0px 3px 6px ;
-    background-color: rgba(0, 0,0, 0.3);
+    box-shadow: 1px 2px 3px var(--lightgreen) ; 
     overflow: hidden;
    
 }
+.Gmap::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.2);
+}
 .form{
     width: 90%;
-    min-height: 300px;
+    min-height: 380px;
     margin: 20px auto;
     
 }
@@ -519,7 +550,7 @@ form{
 }
 form input{
     display: block;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 10px;
     outline: none;
     border: 1px solid var(--dark-green);
@@ -585,6 +616,10 @@ form a:hover{
 .socialIcons a{
     margin: 0 5px 0 0;
     text-decoration: none;
+    color: skyblue;
+}
+.socialIcons a:hover{
+    color: blue;
 }
 .socialIcons a .fa{
     background-color: var(--white);
@@ -599,12 +634,16 @@ form a:hover{
     list-style-type: none;
    
 }
+.pageLinks ul li{
+    padding: 5px;
+}
 .pageLinks ul>li a{
     text-decoration: none;
     color: #ffffff;
-    font-size: calc(13px + 0.4vw);
-    line-height: 1.8;
+    font-size: calc(12px + 0.4vw);
+    text-transform: uppercase;
     padding: 0 20px;
+    font-family: "gill sans", sans-serif;
 }
 .pageLinks ul>li a i{
     margin-right: 5px;
@@ -612,6 +651,7 @@ form a:hover{
 .copyright{
     position: absolute;
     text-align: center;
+    font-family: georgia,serif;
     width: 100%; 
     bottom: 0px;
     font-size: 12px;
@@ -673,7 +713,7 @@ form a:hover{
         top:0px; 
         left:30%; 
         min-width: 70%;
-        padding: 0 20px;
+        padding: 0 20px 0 0 ;
         height:50px;
         transition: none;
       
@@ -684,7 +724,7 @@ form a:hover{
         height: 100%;
         align-items: center;
         width: 100%;
-        justify-content: space-between;
+        justify-content:space-around;
     }
     .navMenu ul li{
         margin: 0px 2px;
@@ -696,13 +736,15 @@ form a:hover{
         opacity: 0.6;       
     }
     .navMenu ul li a{
-        padding: 0px;
         text-align: start;
         font-size: calc(11px + 0.1vw );
         font-family: verdana, sans-serif;
         text-decoration: none;
         color: var(--darkgreen);
     }  
+    .heroText h3{
+        font-size: calc(2.5em + 0.5vw);
+    }
 }
 
 

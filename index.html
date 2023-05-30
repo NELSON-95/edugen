@@ -7,19 +7,20 @@
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family= Roboto"> -->
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+  
 
   <!-- fontawesome icon online link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Bootstrap icon online link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-  <!-- Google icon online link -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
   <title>edugentechHome</title>
 </head>
 <body>
+  <div class="loaderHero">
+    <div class="loader">
+      <h4>EDUGENTECH</h4> 
+  </div>
+  </div>
   <div class="sectionContainer">
     <!-- <div class="heroSection"> -->
     <div class="nav">
@@ -63,11 +64,11 @@
     <div class="aboutSection">
       <div class="aboutHeader">
         <h5><span></span>ABOUT US<span></span></h5>
-        <h4>10 Long Years Of Providing Excellence With Quality At It's Best!</h4>
+        <h4>5 Long Years Of Providing Excellence With Quality At It's Best!</h4>
       </div>
       <div class="aboutText">
-        <p>Edugen technology group is an indigenous Electrical/Electronics company rendering consultancy, installation, sales and general services to the Nigeria government, companies and individuals. Our administrative Headquaters is located at Nsukka Enugu state Nigeria. Our technological capacity meets international standard in order to provide feasible, appropriate and cost effective solutions to our clients needs in line with their business and enviromental goals.</p>
-        <p>This company believe it takes exceptional people to deliver exceptional solutions. We therefore work hard to assemble and retain the best team in the industries, constantly finding and rewarding individuals who share our commitment to client focused service. Our skilled, knowledgeable and dynamic staff work diligently to understand your business and partner with you to successfully execute your projects. Again, our team has exceeded our client's expectations with innovative solutions, time schedules and budget.</p>
+        <p><span>EDUGENTECH</span> group is an indigenous Electrical Electronics company rendering installation, consultancy, sales and general services to the Nigeria government, companies and individuals. Our administrative Headquater is located at Nsukka, Enugu state Nigeria. Our technological capacity meets international standard in order to provide feasible, appropriate and cost effective solutions to our client needs in line with their business and enviromental goals.</p>
+        <p>This company believe that it takes exceptional people to deliver exceptional solutions. We therefore work hard to assemble and retain the best team in the industries, constantly finding and rewarding individuals who share our commitment to client focused service. Our skilled, knowledgeable and dynamic staff work diligently to understand your business and partner with you to successfully execute your projects. Again, our team has exceeded our client's expectations with innovative solutions, time schedules and budget.</p>
         <a href="about.html">Know More About Us</a>
       </div>
     </div>
@@ -78,15 +79,19 @@
       <div class="services">
         <a href="service.html" class="service1">
           <p>Solar Installation</p>
-          <img src="img/solarInstall.png" alt="SOLAR INTALLATION">
+          <i class="fa fa-sun-o fa-1x" id="sun"></i>
+          <i class="fa fa-home fa-2x" id="home"></i>
+          <!-- <i class="fas fa-solar-panels fa-2x"></i> -->
+         
         </a>
         <a href="service.html" class="service2">
           <p>CCTV Camera Installation</p>
-          <img src="" alt="">
+          <i class="fa fa-camera-retro fa-2x"></i>
         </a>
         <a href="service.html" class="service3">
           <p>House Wiring</p>
-          <img src="img/wiring.jpeg" alt="WIRING">
+          <i class="fa fa-lightbulb-o fa-3x"></i>
+          <!-- <img src="img/wiring.jpeg" alt="WIRING"> -->
         </a>
         <!-- <a href="#" class="service4">
           <div class="img4"></div>
@@ -96,15 +101,15 @@
         </a> -->
         <a href="academy.html" class="service5">
           <p>Front End Web Development</p>
-          <img src="" alt="">
+          <i class="fa fa-desktop fa-2x"></i>
         </a>
         <a href="academy.html" class="service6">
           <p>Edugentech Academy(ETA)</p>
-          <img src="" alt="">
+          <i class="fa fa-graduation-cap fa-3x"></i>
         </a>
         <a href="product.html" class="service7">
           <p>We Sell Things You will Like!</p>
-          <img src="" alt="">
+          <i class="fa fa-shopping-cart fa-3x"></i>
         </a>
       </div>
     </div>
@@ -118,8 +123,8 @@
         <img class="imgBox3" src="">
       </div>
       <div class="projectBtn">
-        <div class="prevBtn">PREV</div>
-        <div class="nextBtn">NEXT</div>
+         <div class="prevBtn">PREV</div>
+        <div class="nextBtn">NEXT</div> 
       </div>
       <div class="slideDotBox">
         <div class="dot"></div>
@@ -174,9 +179,8 @@
           <li><a href="about.html"><i class="fa fa-users"></i>About Us</a>
           </li>
           <li><a href="service.html"><i class="fa fa-lightbulb-o"></i>Services</a></li>
-          <li><a href="product.html"><i class="fa fa-sharp fa-solid fa-solar-panel"></i>Products</a></li>
-          <li><a href="#project"><i class="fa-sharp fa-light fa-house-day"></i>Projects</a></li>
-          <li><a href="#contact"><i class="fa fa-address-card"></i>Contact Us</a></li>
+          <li><a href="product.html"><i class="fa fa-plug"></i>Products</a></li>
+          <li><a href="#academy.htmlt"><i class="fa fa-graduation-cap"></i>ACADEMY (ETA)</a></li>
           <!-- <li><a href="#">Footer</a></li> -->
         </ul>
       </div>
@@ -189,6 +193,6 @@
     </div>
 
   </div>
-  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
