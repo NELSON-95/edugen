@@ -18,9 +18,11 @@ html, body{
 .serviceHeader2{
      text-align: center;
      padding: 20px;
-     font-size: calc(14px + 0.4vw);
+     font-size: calc(15px + 0.4vw);
      font-weight: bold;
-     font-family: verdana, sans-serif;
+     font-family: arial, sans-serif;
+     color: var(--darkgreen);
+     background-color: var(--white);
 }
 .serviceContainer2{
      display: flex;
@@ -40,16 +42,18 @@ html, body{
      font-size: calc(13px + 0.1vw);
      font-weight: bold;
      padding-bottom: 10px;
+     color: var(--green);
 }
 .serviceContainer2>div ul{
-     /* background-color: red;  */
+     background-color: red;  
      list-style-type:circle;
-     list-style-position: outside ; 
-     padding: 0;
-     margin: 0;
+     list-style-position:inside ; 
+     width: 100%;
+     /* padding: 10px;
+     margin: 0; */
 }
 .serviceContainer2>div ul li{
      padding-top: 5px;
-     font-family:  Helvetica, serif;
+     font-family:  arial, sans-serif;
     
 }

@@ -157,22 +157,22 @@ html,body {
     margin:0px; 
 }
  .navMenu ul li{
-    line-height: 2;
-    padding-left: 40px;
-    padding-top: 10px;
     border-bottom: 1px solid var(--green);
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
 } 
 .navMenu ul li a{
-    color: black;
+    color: var(--greenblue);
     font-weight: bold;
     width: 100%;
-    font-size:12px;
-    font-family: "Gill sans", sans-serif;
+    font-size:13px;
+    font-family: tahoma, sans-serif;
     transition: 0.3s ease;
+    text-align:start;
     text-decoration: none;
+    display: block;
+    padding: 15px;
+    padding-left: 200px;
+   
 }
 .navMenu ul li a:link{
     color: black;
