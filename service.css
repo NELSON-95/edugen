@@ -14,6 +14,7 @@ html, body{
      display: flex;
      position: relative;
      place-items: center;
+     border-radius: 0 0 100px 0;
 }
 .serviceHeader2{
      text-align: center;
