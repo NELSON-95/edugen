@@ -14,6 +14,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0 0 100px 0;
   z-index: -2;
 }
 .academyHero::before{
@@ -40,25 +41,27 @@
   background-color: #ffffff;
   padding: 20px 10px;
   border-radius: 15px 10px 0 10px;
+
 }
 .academyHeader h5{
-  font-size: calc(14px + 0.4vw);
-  font-family: verdana, sans-serif;
+  font-size: calc(15px + 0.4vw);
+  font-family: helvetica, sans-serif;
   text-align: center;
+  font-weight: bold;
   padding: 20px 0;
   background-color: var(--white);
   color: var(--darkgreen);
 }
 .academyBlocks h5{
-  font-size: calc(12px + 0.4vw);
-  font-family: verdana, sans-serif;
+  font-size: 13px;
+  font-family:georgia, serif; 
   text-align: start;
   padding: 10px 0;
   color: var(--darkgreen);
 }
 .academyBlocks p{
-  font-size: calc(15px + 0.2vw);
-  font-family: georgia, serif;
+  font-size:0.9rem;
+  font-family: verdana, sans-serif;
   padding:0 10px ;
   line-height: 1.5;
   text-align: start;
