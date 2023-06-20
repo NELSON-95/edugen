@@ -230,7 +230,7 @@ html,body {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0,0, 0.8);
+    background-color: rgba(0, 0,0, 0.6);
     z-index: -1;
 }
 .heroText{
@@ -281,16 +281,15 @@ html,body {
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
-    padding-top: 20px;
-    padding: 10px;
+    padding: 20px 0 10px;
     color: var(--darkgreen);
 }
 .aboutText p{
-    max-width: 1200px;
-    font-size: calc(15px + 0.4vw);
+    max-width: 1500px;
+    font-size: calc(15px + 0.5vw);
     font-family: Arial, sans-serif;
     text-align:start;
-    padding: 10px 10px 10px 20px ;
+    padding: 10px 10px 0 20px ;
     line-height: 1.5;
     margin: 0px auto;
    
@@ -334,6 +333,7 @@ html,body {
     font-family: arial, sans-serif;
     text-align: center;
     color: var(--darkgreen);
+    padding: 20px 0;
     
 }
 .services{
@@ -367,7 +367,7 @@ html,body {
 .services>a p{
     text-transform: uppercase;
     font-size: calc(8px + 0.2vw);
-    padding: 10px;
+    padding:30px 10px;
     text-align: start;
     color: var(--greenblue); 
     font-family: Helvetica;
@@ -413,19 +413,19 @@ html,body {
     font-weight: bold;
     font-family: arial, sans-serif;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     color: var(--darkgreen);
 }
 .projectImgBox{
     display: flex;
-    height: 250px;
+    height: 300px;
     width: 100%;
     background-color: var(--white);
     flex-wrap: wrap;
 }
 .projectImgBox>img{
     height: 100%;
-    width: max(290px, 30%);
+    width: max(300px, 30%);
     border-radius: 15px;
     background-color: var(--white);
     margin: 0 auto;
@@ -439,7 +439,7 @@ html,body {
     display: flex;
     width: 300px;
     height: 30px;
-    margin: 10px auto;
+    margin: 20px auto 10px;
     cursor: pointer; 
     position: relative; 
    
@@ -448,12 +448,12 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--darkgreen);
+    border:1px solid var(--darkgreen);
+    color: #02ec88;
     font-weight: bold;
     width: 50%;
     height: 30px;
     border-radius: 5px;
-    color: white;
     font-weight: bold;
     /* overflow: hidden; */
 }
@@ -464,8 +464,8 @@ html,body {
     width: 50%;
     height: 30px;
     border-radius: 5px;
-    background-color: red;
-    color: white;
+    border: 1px solid red;
+    color: #02ec88;
     font-weight: bold;
     /* overflow: hidden; */
 }
@@ -501,12 +501,13 @@ html,body {
     font-family: arial, sans-serif;
     color: var(--darkgreen);
     text-align: center;
-    padding: 10px;
+    padding: 40px 0 20px;
 }
 .contactHeader h4{
     font-size: calc(15px + 0.4vw);
     font-weight: bold;
     font-family: georgia, serif;
+    color: rgba(0, 0,0, 0.5);
     text-align: center;
     padding:  20px;
 }
@@ -566,7 +567,7 @@ form input:focus, form textarea:focus{
     color: var(--white);
     border: 1px solid var(--gray);
 }
-form a{
+form button{
     text-decoration: none;
     color: var(--white);
     font-weight: bold;
@@ -578,7 +579,7 @@ form a{
     margin: 0px auto;
     background-color:  var(--lightgreen);
 }
-form a:hover{
+form button:hover{
     text-decoration: none;
     background-color: var(--darkgreen);
     color: #ffffff;
@@ -767,13 +768,18 @@ form a:hover{
         display: flex;
         justify-content: space-between;
         height: 100%;
-        width: 600px;
+        max-width: 1000px;
         margin: 0 auto;
         place-items: center;
       
     }
+    .pageLinks ul li{
+        text-align: center;
+    }
     .pageLinks ul li i{
         display: block;
+        font-size:30px ;
+        padding: 10px;
     }
 
 }
@@ -789,4 +795,14 @@ form a:hover{
     .imgBox3{
         display: flex;
     }
+}
+
+@media screen and (max-width:400px){
+    .projectBtn{
+        display: none;
+    }
+    .slideDotBox{
+        display: none;
+    }
+
 }

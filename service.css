@@ -10,15 +10,29 @@ html, body{
 .serviceHero2{
      width: 100%;
      min-height: 90vh;
-     background-color: aquamarine;
+     background-image:url(img/hero3.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     z-index: -2;
      display: flex;
      position: relative;
      place-items: center;
      border-radius: 0 0 100px 0;
 }
+.serviceHero2::before{
+     content: "";
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0,0, 0.6);
+     z-index: -1;
+ }
 .serviceHeader2{
      text-align: center;
-     padding: 20px;
+     padding: 40px 0 20px;
      font-size: calc(15px + 0.4vw);
      font-weight: bold;
      font-family: arial, sans-serif;
@@ -43,14 +57,14 @@ html, body{
      font-size: calc(13px + 0.1vw);
      font-weight: bold;
      padding-bottom: 10px;
-     color: var(--green);
+     color: var(--darkgreen);
 }
 .serviceContainer2>div ol{
      
      width: 100%;
      display: list-item;
      width: 100%;
-     padding-left: 20px;
+     padding-left: 10px;
 
 }
 .serviceContainer2>div ol li{

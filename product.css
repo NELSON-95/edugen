@@ -27,7 +27,7 @@
   font-family: 'Arial Black', sans-serif;
   text-align: center;
   font-weight: bold;
-  padding: 20px 0;
+  padding: 30px 0 20px;
   color: var(--darkgreen);
 }
 .productSection h4{
@@ -37,6 +37,7 @@
   padding-bottom: 20px;
   width: 90%;
   line-height: 1.5;
+  opacity: 0.5;
 }
 
 .productItems{
@@ -57,8 +58,10 @@
   text-align: center;
   padding: 10px;
   font-size: 14px;
+  color: var(--darkgreen);
   font-family: Arial;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 .productItems img{
   display: block;

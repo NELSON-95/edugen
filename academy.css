@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   place-items: center;
-  /* background-image: url(img/edugenBattery.png); */
+  background-image: url(img/edugenBattery.png); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0,0, 0.8);
+  background-color: rgba(0, 0,0, 0.6);
   z-index: -1;
 }
 
