@@ -1,7 +1,3 @@
-window.addEventListener('DOMContentLoaded', ()=>{
-    let preLoader= document.querySelector('.loaderHero');
-    preLoader.style.display='none';
-})
 
 const hamburger = document.querySelector(".hamburger");
 const item1= document.querySelector(".item1");

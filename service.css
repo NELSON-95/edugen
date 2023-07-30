@@ -9,7 +9,7 @@ html, body{
 }
 .serviceHero2{
      width: 100%;
-     min-height: 90vh;
+     min-height: 80vh;
      background-image:url(img/hero3.jpg);
      background-position: center;
      background-repeat: no-repeat;

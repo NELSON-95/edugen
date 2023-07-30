@@ -169,6 +169,7 @@ html,body {
     transition: 0.3s ease;
     text-align:start;
     text-decoration: none;
+    text-transform: uppercase;
     display: block;
     padding: 15px;
     padding-left: 200px;
@@ -195,33 +196,15 @@ html,body {
     align-items: center; 
     justify-content: center;
     width: 100%;
-    background-image: url("img/hero1.jpg");
+    background-image: url("img/hero2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 90vh;
+    height: 80vh;
     border-radius: 0 0 100px 0;
     top:50px;
-    animation: heroBanner 21s infinite ease 3s; 
     z-index: -2;
-}
-@keyframes heroBanner{
-    0%{
-        background-image: url("img/hero1.jpg");
-    }
-    25%{
-        background-image: url("img/hero4.jpg");
-    }
-    50%{
-        background-image: url("img/hero2.jpg");
-    }
-    75%{
-        background-image: url("img/hero6.jpg");
-    }
-    100%{
-        background-image: url("img/hero7.jpg");
-    }
 }
 .heroBanner::before{
     content: "";
